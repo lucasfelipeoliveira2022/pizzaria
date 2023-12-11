@@ -1,0 +1,39 @@
+//cadastra, aparecer, 
+///CADSTRA 
+POST http://localhost:3333/pizza
+Content-Type: application/json
+
+{
+    "tamanho": "M",
+    "sabor": "Calabresa",
+    "preco": 45
+}
+
+###
+
+
+//APARECE O CADASTRO
+GET http://localhost:3333/pizza
+
+###
+
+//pesquisa
+GET http://localhost:3333/pizza?search=G
+
+###
+
+//ATUALIZAR
+PUT http://localhost:3333/pizza/cd756a23-6edc-4a6d-8387-7d14cf225bdf
+Content-Type: application/json
+
+{
+    "tamanho": "G",
+    "sabor": "Frango com Catupiry",
+    "preco": 50
+}
+
+###
+
+//DELETE
+DELETE http://localhost:3333/pizza
+
